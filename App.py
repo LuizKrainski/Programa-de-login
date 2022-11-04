@@ -85,7 +85,7 @@ class Application:
         self.txtemail["font"] = self.fonte
         self.txtemail.pack(side=LEFT)
 
-        self.lblusuario= Label(self.container6, text="Usu�rio:",
+        self.lblusuario= Label(self.container6, text="Usuário:",
         font=self.fonte, width=10)
         self.lblusuario.pack(side=LEFT)
 

@@ -25,9 +25,9 @@ class Usuarios(object):
             banco.conexao.commit()
             c.close()
 
-            return "Usu�rio cadastrado com sucesso!"
+            return "Usuário cadastrado com sucesso!"
         except:
-            return "Ocorreu um erro na inser��o do usu�rio"
+            return "Ocorreu um erro na inserio do usuário"
 
     def updateUser(self):
 
@@ -41,9 +41,9 @@ class Usuarios(object):
             banco.conexao.commit()
             c.close()
 
-            return "Usu�rio atualizado com sucesso!"
+            return "Usuário atualizado com sucesso!"
         except:
-            return "Ocorreu um erro na altera��o do usu�rio"
+            return "Ocorreu um erro na alteração do usuário"
 
     def deleteUser(self):
 
@@ -57,9 +57,9 @@ class Usuarios(object):
             banco.conexao.commit()
             c.close()
 
-            return "Usu�rio exclu�do com sucesso!"
+            return "Usuário excluído com sucesso!"
         except:
-            return "Ocorreu um erro na exclus�o do usu�rio"
+            return "Ocorreu um erro na exclusão do usuário"
 
     def selectUser(self, idusuario):
         banco = Banco()
@@ -81,4 +81,4 @@ class Usuarios(object):
 
             return "Busca feita com sucesso!"
         except:
-            return "Ocorreu um erro na busca do usu�rio"
+            return "Ocorreu um erro na busca do usuário"

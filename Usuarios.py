@@ -2,7 +2,7 @@ from Banco import Banco
 
 class Usuarios(object):
 
-    def __init__(self, idusuario = 0, nome = "", telefone = "",email = "", usuario = "", senha = ""):
+    def __init__(self, idusuario = 1, nome = "", telefone = "",email = "", usuario = "", senha = ""):
         self.info = {}
         self.idusuario = idusuario
         self.nome = nome

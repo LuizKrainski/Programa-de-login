@@ -124,82 +124,82 @@ class Application:
         self.lblmsg["font"] = ("Verdana", "9", "italic")
         self.lblmsg.pack()
 
-def inserirUsuario(self):
-    user = Usuarios()
+    def inserirUsuario(self):
+        user = Usuarios()
 
-    user.nome = self.txtnome.get()
-    user.telefone = self.txttelefone.get()
-    user.email = self.txtemail.get()
-    user.usuario = self.txtusuario.get()
-    user.senha = self.txtsenha.get()
+        user.nome = self.txtnome.get()
+        user.telefone = self.txttelefone.get()
+        user.email = self.txtemail.get()
+        user.usuario = self.txtusuario.get()
+        user.senha = self.txtsenha.get()
 
-    self.lblmsg["text"] = user.insertUser()
+        self.lblmsg["text"] = user.insertUser()
 
-    self.txtidusuario.delete(0, END)
-    self.txtnome.delete(0, END)
-    self.txttelefone.delete(0, END)
-    self.txtemail.delete(0, END)
-    self.txtusuario.delete(0, END)
-    self.txtsenha.delete(0, END)
+        self.txtidusuario.delete(0, END)
+        self.txtnome.delete(0, END)
+        self.txttelefone.delete(0, END)
+        self.txtemail.delete(0, END)
+        self.txtusuario.delete(0, END)
+        self.txtsenha.delete(0, END)
 
-def alterarUsuario(self):
-    user = Usuarios()
+    def alterarUsuario(self):
+        user = Usuarios()
 
-    user.idusuario = self.txtidusuario.get()
-    user.nome = self.txtnome.get()
-    user.telefone = self.txttelefone.get()
-    user.email = self.txtemail.get()
-    user.usuario = self.txtusuario.get()
-    user.senha = self.txtsenha.get()
+        user.idusuario = self.txtidusuario.get()
+        user.nome = self.txtnome.get()
+        user.telefone = self.txttelefone.get()
+        user.email = self.txtemail.get()
+        user.usuario = self.txtusuario.get()
+        user.senha = self.txtsenha.get()
 
-    self.lblmsg["text"] = user.updateUser()
+        self.lblmsg["text"] = user.updateUser()
 
-    self.txtidusuario.delete(0, END)
-    self.txtnome.delete(0, END)
-    self.txttelefone.delete(0, END)
-    self.txtemail.delete(0, END)
-    self.txtusuario.delete(0, END)
-    self.txtsenha.delete(0, END)
+        self.txtidusuario.delete(0, END)
+        self.txtnome.delete(0, END)
+        self.txttelefone.delete(0, END)
+        self.txtemail.delete(0, END)
+        self.txtusuario.delete(0, END)
+        self.txtsenha.delete(0, END)
 
-def excluirUsuario(self):
-    user = Usuarios()
+    def excluirUsuario(self):
+        user = Usuarios()
 
-    user.idusuario = self.txtidusuario.get()
+        user.idusuario = self.txtidusuario.get()
 
-    self.lblmsg["text"] = user.deleteUser()
+        self.lblmsg["text"] = user.deleteUser()
 
-    self.txtidusuario.delete(0, END)
-    self.txtnome.delete(0, END)
-    self.txttelefone.delete(0, END)
-    self.txtemail.delete(0, END)
-    self.txtusuario.delete(0, END)
-    self.txtsenha.delete(0, END)
+        self.txtidusuario.delete(0, END)
+        self.txtnome.delete(0, END)
+        self.txttelefone.delete(0, END)
+        self.txtemail.delete(0, END)
+        self.txtusuario.delete(0, END)
+        self.txtsenha.delete(0, END)
 
 
-def buscarUsuario(self):
-    user = Usuarios()
+    def buscarUsuario(self):
+        user = Usuarios()
 
-    idusuario = self.txtidusuario.get()
+        idusuario = self.txtidusuario.get()
 
-    self.lblmsg["text"] = user.selectUser(idusuario)
+        self.lblmsg["text"] = user.selectUser(idusuario)
 
-    self.txtidusuario.delete(0, END)
-    self.txtidusuario.insert(INSERT, user.idusuario)
+        self.txtidusuario.delete(0, END)
+        self.txtidusuario.insert(INSERT, user.idusuario)
 
-    self.txtnome.delete(0, END)
-    self.txtnome.insert(INSERT, user.nome)
+        self.txtnome.delete(0, END)
+        self.txtnome.insert(INSERT, user.nome)
 
-    self.txttelefone.delete(0, END)
-    self.txttelefone.insert(INSERT,user.telefone)
+        self.txttelefone.delete(0, END)
+        self.txttelefone.insert(INSERT,user.telefone)
 
-    self.txtemail.delete(0, END)
-    self.txtemail.insert(INSERT, user.email)
+        self.txtemail.delete(0, END)
+        self.txtemail.insert(INSERT, user.email)
 
-    self.txtusuario.delete(0, END)
-    self.txtusuario.insert(INSERT, user.usuario)
+        self.txtusuario.delete(0, END)
+        self.txtusuario.insert(INSERT, user.usuario)
 
-    self.txtsenha.delete(0, END)
-    self.txtsenha.insert(INSERT,user.senha)
+        self.txtsenha.delete(0, END)
+        self.txtsenha.insert(INSERT,user.senha)
 
 root = Tk()
 Application(root)

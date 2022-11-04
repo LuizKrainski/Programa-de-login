@@ -54,7 +54,8 @@ class Application:
         self.txtidusuario["font"] = self.fonte
         self.txtidusuario.pack(side=LEFT)
 
-        self.btnBuscar = Button(self.container2, text="Buscar",font=self.fonte, width=10)
+        self.btnBuscar = Button(self.container2, text="Buscar",
+        font=self.fonte, width=10)
         self.btnBuscar["command"] = self.buscarUsuario
         self.btnBuscar.pack(side=RIGHT)
 

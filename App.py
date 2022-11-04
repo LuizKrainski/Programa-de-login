@@ -124,7 +124,6 @@ class Application:
         self.lblmsg["font"] = ("Verdana", "9", "italic")
         self.lblmsg.pack()
 
-
 def inserirUsuario(self):
     user = Usuarios()
 
@@ -142,8 +141,6 @@ def inserirUsuario(self):
     self.txtemail.delete(0, END)
     self.txtusuario.delete(0, END)
     self.txtsenha.delete(0, END)
-
-
 
 def alterarUsuario(self):
     user = Usuarios()
@@ -163,8 +160,6 @@ def alterarUsuario(self):
     self.txtemail.delete(0, END)
     self.txtusuario.delete(0, END)
     self.txtsenha.delete(0, END)
-
-
 
 def excluirUsuario(self):
     user = Usuarios()
@@ -205,8 +200,6 @@ def buscarUsuario(self):
 
     self.txtsenha.delete(0, END)
     self.txtsenha.insert(INSERT,user.senha)
-
-
 
 root = Tk()
 Application(root)

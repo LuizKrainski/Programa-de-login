@@ -2,7 +2,6 @@ from Banco import Banco
 
 class Usuarios(object):
 
-
     def __init__(self, idusuario = 0, nome = "", telefone = "",email = "", usuario = "", senha = ""):
         self.info = {}
         self.idusuario = idusuario
@@ -11,7 +10,6 @@ class Usuarios(object):
         self.email = email
         self.usuario = usuario
         self.senha = senha
-
 
     def insertUser(self):
 

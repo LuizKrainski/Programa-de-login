@@ -1,5 +1,5 @@
 import sqlite3
-
+# TODO: Criar um banco de dado salvando na memoria 
 class Banco():
 
     def __init__(self):
